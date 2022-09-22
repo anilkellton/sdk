@@ -87,6 +87,7 @@ var SuperMojoType = /** @class */ (function () {
       div.classList.add("container-div");
       var iframe = document.createElement('iframe');
       iframe.src = url;
+      iframe.referrerPolicy = "strict-origin-when-cross-origin"
       div.appendChild(iframe);
       document.body.appendChild(div);
       _this.eventListner(callbackResponse);
