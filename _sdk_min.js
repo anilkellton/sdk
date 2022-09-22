@@ -126,7 +126,7 @@ var SuperMojoType = /** @class */ (function () {
     __classPrivateFieldSet(this, _SuperMojoType_tokenId, "", "f");
     __classPrivateFieldSet(this, _SuperMojoType_type, "", "f");
     __classPrivateFieldSet(this, _SuperMojoType_redirectUrl, "", "f");
-    __classPrivateFieldSet(this, _SuperMojoType_appUrl, "http://localhost:4000", "f");
+    __classPrivateFieldSet(this, _SuperMojoType_appUrl, "https://groovy-events-front.vercel.app/", "f");
     var styles = "\n    .supermojo-btn-wrapper{\n      border:none;\n      color:#fff;\n      background: #1A73E8;\n      border-radius: 5px;\n      width: 300px;\n      font-size: 16px;\n      font-family: Arial, Helvetica, sans-serif;\n      height: 50px;\n      font-weight: 500;\n      cursor: pointer;\n      box-shadow: 0 3px 3px rgba(0,0,0,.2);\n    }\n    .container-div{\n        position: fixed;\n        top: 0;\n        left: 0;\n        width: 100%;\n        height: 100%;\n        text-align: center;\n        display: flex;\n        align-items: center;\n        justify-content: center;\n        background: #1c18189e;\n      }\n      iframe{\n        max-width: 460px;\n        width: 95%;\n        margin: 50px auto 20px;\n        height: 650px;\n        border: none;\n      }\n    ";
     var styleSheet = document.createElement("style");
     styleSheet["innerText"] = styles;
