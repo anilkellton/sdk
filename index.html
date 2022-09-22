@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <script src="_sdk_type.js"></script> -->
+</head>
+
+<body>
+    <!-- <button onclick="setConfig('keyforsupermojo', 'supermojo')">Send Details</button> -->
+    <!-- <script src="index.js"></script> -->
+    <!-- <script src="code.js"></script> -->
+    <!-- <script src="_sdk.js"></script> -->
+    <script src="_sdk_min.js"></script>
+    <script>
+        // var supermojo = new SuperMojoSdk()
+        var supermojo = new SuperMojoType()
+
+        supermojo.init({
+            referenceId: "7456uigasfva",
+            customerId: "34789wyuigakfa",
+            contractAddress: "0x9dcf9d8e96ef00c23f77b9c2562c525fda04e962",
+            tokenId: "5",
+            type: "ERC-721",
+            redirectUrl: "",
+            clientId: "9864326"
+        })
+
+        supermojo.renderButton({
+            callbackResponse: callback,
+            className: null,
+            buttonId: null,
+            buttonText: null
+        })
+        function callback(response) {
+            console.log("response got it", response)
+        }
+    </script>
+    <script>
+        function inIframe() {
+            try {
+                console.log("outframe")
+                return window.self !== window.top;
+            } catch (e) {
+                console.log("inframe")
+                return true;
+            }
+        }
+        inIframe()
+    </script>
+</body>
+
+</html>
